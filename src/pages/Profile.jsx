@@ -27,14 +27,16 @@ const Profile = () => {
             </div>
 
             {/* campo de mensajes */}
-            <div className='bg-neutral-600 w-full gap-y-3 p-5'>
+            <div className=' w-full jus gap-3 p-5'>
                 <div className='bg-amber-300 max-w-90 rounded-2xl p-3'>
                     {profileSelected.lastMessage}
                 </div>
 
                 {messages.map((msj, i) => (
-                    <div key={i} className='bg-amber-600 max-w-90 rounded-2xl p-3'>
+                    <div className='flex justify-end w-full'>
+                    <div key={i} className='bg-amber-600 max-w-90 p-3 mt-3 rounded-2xl text-white'>
                         {msj}
+                    </div>
                     </div>
                 ))}
             </div>
