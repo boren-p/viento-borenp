@@ -75,7 +75,7 @@ export let profiles=[
 
 const App = () => {
   return (
-    <div className='relative w-150 h-screen border overflow-y-auto'>
+    <div className='relative w-150 h-screen overflow-y-auto'>
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
