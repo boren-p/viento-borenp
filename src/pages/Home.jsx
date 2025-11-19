@@ -14,7 +14,7 @@ const Home = () => {
             {profiles.map((profile)=>{
                 return(
                     <Link to={`/profile/${profile.id}`}>
-                    <div key={profile.id} className='flex gap-5 p-5 border-b'>
+                    <div key={profile.id} className='flex gap-5 p-5 border-b border-gray-300'>
                         <div style={{backgroundImage:`url(${profile.image})`}} className='bg-cover bg-no bg-repeat bg-center size-20 border border-gray-300 rounded-full'></div>
                         <div className=''>
                             <h2 className='font-bold text-2xl'>{profile.name}</h2>
